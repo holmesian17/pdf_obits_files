@@ -3,7 +3,6 @@ from subprocess import Popen
 import os
 import time
 
-# abspath to a folder as a string
 
 folder = os.getcwd()
 print(folder)
@@ -11,9 +10,6 @@ org_file = folder + "\organize.bat"
 print(org_file)
 p = Popen(["organize.bat", org_file])
 stdout, stderr = p.communicate()
-
-time.sleep(5)
-# inputpdf = PdfFileReader(open(filename, "rb"))
 
 for subdir, dirs, files in os.walk(folder):
     for subdir in dirs:
