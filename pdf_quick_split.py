@@ -11,7 +11,6 @@ p = Popen(["organize.bat", org_file])
 stdout, stderr = p.communicate()
 
 time.sleep(5)
-# inputpdf = PdfFileReader(open(filename, "rb"))
 
 for subdir, dirs, files in os.walk(folder):
     for subdir in dirs:
