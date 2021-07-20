@@ -17,21 +17,24 @@ for subdir, dirs, files in os.walk(folder):
         for filename in os.listdir(subdir):
             part = os.path.join(folder, subdir)
             full = os.path.join(part, filename)
-            
-            print("Part", part)
-            print("Full", full)
-            print("filename", filename)
-            
-            image = convert_from_path(full)
-            
-            print(image)
-            
-            ready_name = filename.strip(".pdf")
-
-            second_string = 'page'+ ready_name +'.jpg'
-            right_path = os.path.join(part, second_string)
-            
-            print("Right path", right_path)
-            for i in range(len(image)):
+            filenumber = filename.strip(".pdf")
+            if filenumber.isnumeric() == False:
+                pass
+            else:
+                print("Part", part)
+                print("Full", full)
+                print("filename", filename)
                 
-                image[i].save(right_path, 'JPEG')
+                image = convert_from_path(full)
+                
+                print(image)
+                
+                ready_name = filename.strip(".pdf")
+
+                second_string = 'page'+ ready_name +'.jpg'
+                right_path = os.path.join(part, second_string)
+                
+                print("Right path", right_path)
+                for i in range(len(image)):
+                    
+                    image[i].save(right_path, 'JPEG')
