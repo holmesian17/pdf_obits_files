@@ -1,179 +1,178 @@
 page0.jpg
-Elizabeth Butler Elizabeth
+['Elizabeth', 'Butler', 'Elizabeth', 'Butler,', '95,', 'of', 'Lafayette,', 'died', 'Saturday,', 'Aug.']
 page1.jpg
-Elizabeth J. "Betty"
+['Elizabeth', 'J.', '"Betty"', 'Butler', 'JUN', '15', '2010', 'Elizabeth', 'J.', '“Betty”']
 page10.jpg
-BUTLER Jordan James
+['BUTLER', 'Jordan', 'James', 'Butler,', 'infant', 'gon', 'of', 'Jordan', 'and', 'Rachel']
 page11.jpg
-Death date: February
+['Death', 'date:', 'February', '4,', 'LOS', 'Publication', 'dates', 'February', '21,', '201%']
 page12.jpg
-Kathryn Louise (Nordquist)
+['Kathryn', 'Louise', '(Nordquist)', 'Butler', 'FORT', 'COLLINS', '-', 'Kath-', 'tyn', 'Louise']
 page13.jpg
-mmyieee ovo LIMITE
+['mmyieee', 'ovo', 'LIMITE', '.', 'Lynn', 'D.', 'Butler,', '48,', 'of', 'Fort']
 page14.jpg
-21848.png
-Couldn't get name
+[]
 page15.jpg
-Phyllis E. Butler
+['Phyllis', 'E.', 'Butler', '>', '.', 'Phyllis', 'E.', 'Butler,', '86,', 'of']
 page16.jpg
-Scott Alan Butler
+['Scott', 'Alan', 'Butler', 'Scott', 'Alan', 'Butler,', '19,', 'of', 'Wind-', 'sor,']
 page17.jpg
-Shirley Ann Butler
+['Shirley', 'Ann', 'Butler', 'Shirley', 'Ann', 'Butler,', '79,', 'of', 'Fort', 'Collins,']
 page18.jpg
-Stelia Butler Stella
+['Stelia', 'Butler', 'Stella', 'Elizabeth', 'Butler,', '104,', 'died', 'Friday', 'Feb.', '7,']
 page19.jpg
-BUTLER Tryove C.
+['BUTLER', 'Tryove', 'C.', 'Butler,', '26,', 'of', 'Fort', 'Col-', 'lins', 'passed']
 page2.jpg
-Florence M. Butler
+['Florence', 'M.', 'Butler', 'Florence', 'M.', 'Butler,', '82,', 'of', 'Fort', 'Collins']
 page20.jpg
-Walter C. Butler
+['Walter', 'C.', 'Butler', 'Walter', 'C.', 'Butler,', '78,', 'of', 'Fort', 'Collins']
 page21.jpg
-Willie Butler Thelma
+['Willie', 'Butler', 'Thelma', 'Butler', 'Willie', '“Bill”', 'Butler,', 'born', 'Oct.', '8,']
 page22.jpg
-Willie Butler Thelma
+['Willie', 'Butler', 'Thelma', 'Butler', 'Willie', '“Bill”', 'Butler,', 'born', 'Oct.', '8,']
 page23.jpg
-ere ee ee
+['ere', 'ee', 'ee', 'a', 'rr', 'ee', 'ee', 'eS', 'TT', '=']
 page24.jpg
-B e utlev
+['B', 'e', 'utlev', 'Dodson', 'Mary', 'Te', '‘', 'JON', 'See', 'Dodse']
 page25.jpg
-Death date: September
+['Death', 'date:', 'September', '30,', '2017', 'Ryan', 'Butner', 'Pub,', 'date:', 'Oclober']
 page26.jpg
-; Dougias Butow
+[';', 'Dougias', 'Butow', 'i', 'Haven', 'died', 'Tuesday,', 'Jan.', '4,', '33']
 page27.jpg
-Margaret L. Butow
+['Margaret', 'L.', 'Butow', 'Margaret', 'Louise', '“Peg”', 'Butow,', '64,', 'of', 'Glen']
 page28.jpg
-AU) a BUTTERBAUGH
+['AU)', 'a', 'BUTTERBAUGH', 'CEP', 'DTKD', 'iy', 'HONRLD', 'CAEN', 'KZ', 'Donald']
 page29.jpg
-Caroline Butterfield Caroline
+['Caroline', 'Butterfield', 'Caroline', 'McCully', '“Cully”', 'But-', 'terfield,', '89,', 'of', 'Fort']
 page3.jpg
-Fred Butler Fred
+['Fred', 'Butler', 'Fred', 'T.', 'Butler,', '73,', 'died', 'Saturday', 'after', '2']
 page30.jpg
-WVVIVIGS A, Butterfield
+['WVVIVIGS', 'A,', 'Butterfield', 'Dolores', 'A.', 'Butterfield', 'of', 'Denver', 'died', 'Tuesday,']
 page31.jpg
-“Edwina, i 112
+['“Edwina,', 'i', '112', 'South', 'Meld', 'Collins', 'Cont', 'far', 'sn', '3']
 page32.jpg
-wats oll 43
+['wats', 'oll', '43', 'une', 'Butterfield', '.', 'Mrs,', 'M.', 'June', 'Butterfield,']
 page33.jpg
-Larry Butterfield 5
+['Larry', 'Butterfield', '5', 'Larry', 'Butterfield,', '73,', 'ZZ,', 'Von', 'BDOISF', 'ce.']
 page34.jpg
-Bill Buttermore William
+['Bill', 'Buttermore', 'William', '“Bill”', 'Buttermore,', '54,', 'of', 'Fort', 'Collins', 'and']
 page35.jpg
-Benjamin Buttice March
+['Benjamin', 'Buttice', 'March', '14,', '1920,', 'to', 'Dec.', '16,', '2004', 'Former']
 page36.jpg
-Gerald ("Jerry") Dewhurst
+['Gerald', '("Jerry")', 'Dewhurst', 'Button', 'Gerald', '("Jerry")', 'Dewhurst', 'Button,', '80,', 'died']
 page37.jpg
-Earl L. Buttorff
+['Earl', 'L.', 'Buttorff', 'Earl', 'L.', 'Buttorff,', '85,', 'of', 'Fort', 'Col-']
 page38.jpg
-hg Yi, F0/2
+['hg', 'Yi,', 'F0/2', 'ba', 'aera', '(Lena)', 'Cig', 'BI', 'Zl?', 'tub']
 page39.jpg
-purrorFF DEC 2
+['purrorFF', 'DEC', '2', '7.200', 'Jerry', 'Buttorff,', '65', 'of', 'Fort', 'Col-']
 page4.jpg
-Glendoris G Butler
+['Glendoris', 'G', 'Butler', 'Gary', 'L.', 'Butler', 'of', 'Eaton,', 'and', 'Jef']
 page40.jpg
-Burrorrr DEC 2
+['Burrorrr', 'DEC', '2', '0', '200', 'Jerry', 'Buttorff,', 'age', '65', 'of']
 page41.jpg
-Ann Butts Ann
+['Ann', 'Butts', 'Ann', '(Ema)', 'Bauer', 'Butts,', 'of', 'Fort', 'Collins,', 'away']
 page42.jpg
-\ David Baxter
+['\\', 'David', 'Baxter', 'Butts', 'David', 'Baxter', 'Butts,', '79,', 'passed', 'away']
 page43.jpg
-iris Wilma Butts
+['iris', 'Wilma', 'Butts', 'The', 'Lord', 'called', 'Iris', 'Wil-', 'ma', 'Butts']
 page44.jpg
-Dr. Jerry Lee
+['Dr.', 'Jerry', 'Lee', 'Butts', 'Dr.', 'Jerry', 'Lee', 'Butts', 'passed', 'away']
 page45.jpg
-“lra Buiz 4-l4-
+['“lra', 'Buiz', '4-l4-', '56', 'Ira', 'Ai', 'Butz', 'of', 'Auburn,', 'Ala.,']
 page46.jpg
-eA Gj FRR-BO-
+['eA', 'Gj', 'FRR-BO-', 'Jessie', 'Butz', 'died', 'Aug.', '12', 'iliness.', '*']
 page47.jpg
-Ezra Buxman Ezra
+['Ezra', 'Buxman', 'Ezra', 'Buxman,', '85,', 'of', 'Greeley', 'died', 'Saturday,', 'May']
 page48.jpg
-Helene Buxman Helene
+['Helene', 'Buxman', 'Helene', 'Buxman,', 'born', 'No-', 'vember', '20,', '1918.', 'Graveside']
 page49.jpg
-eo Bf 4
+['eo', 'Bf', '4', 'ya', '.', 'LP', 'a', 'Ot,', 'f', 'A']
 page5.jpg
-Harold Sims Butler
+['Harold', 'Sims', 'Butler', 'Harold', 'Sims', 'Gah', 'Butler,', '>»', 'de', 'Vs']
 page50.jpg
-j > 1
+['j', '>', '1', '4', '|', '/', 'Be', 'fp', 'John', 'Buxman']
 page51.jpg
-Ramsey Buxman Ramsey
+['Ramsey', 'Buxman', 'Ramsey', 'Buxman,', '15,', 'of', 'Fort', 'Collins', 'died', 'Monday,']
 page52.jpg
-Julianne Faith Buxton
+['Julianne', 'Faith', 'Buxton', 'Infant', 'daughter', 'of', 'Kendell', '&', 'Ruth', 'Buxton,']
 page53.jpg
-erha (Penny) 320°"
+['erha', '(Penny)', '320°"', 'Orpha', '(Penny)', 'Buxton', 'passed', 'away', 'at', 'Poudre']
 page54.jpg
-Lieutenant Colonel Robert
+['Lieutenant', 'Colonel', 'Robert', 'Allen', 'Buxton', 'Lieutenant', 'Colonel', 'Robert', 'Allen', 'Bux-']
 page55.jpg
-Simona Trinidad “Trini”?
+['Simona', 'Trinidad', '“Trini”?', 'Byas', 'Simona', 'Trinidad', '“Trini”', 'Byas,', '99,', 'died']
 page56.jpg
-Ronald E. Bycroft
+['Ronald', 'E.', 'Bycroft', 'Ronald', 'E.', 'Bycroft,', 'born', 'Dec.', '10,', '1932']
 page57.jpg
-The funcral of
+['The', 'funcral', 'of', 'Mimer', 'i.', 'Py', 'erly,', '706', 'J:', 'street,']
 page58.jpg
-Patricia Byerly _
+['Patricia', 'Byerly', '_', 'Patricia', 'Byerly,', '67,', 'of', 'Fort', 'Col-', 'lins,']
 page59.jpg
-Carrol E. Byerrum
+['Carrol', 'E.', 'Byerrum', 'Carrol', 'E.', 'Byerrum,', '79,', 'of', 'Love-', 'land,']
 page6.jpg
-purer NOV 16
+['purer', 'NOV', '16', '2019', 'Harold', '“Hal”', 'Butler,', 'age', '79', 'of']
 page60.jpg
-Eimer “Joe” Byers
+['Eimer', '“Joe”', 'Byers', 'Elmer', '“Joe”', 'Byers,', '65,', 'of', 'Fort', 'Collins']
 page61.jpg
-BYERS Dr. J.
+['BYERS', 'Dr.', 'J.', 'Wilson', 'Byers', 'of', 'Fort', 'Collins.', 'Funeral', '1']
 page62.jpg
-Kenneth H. Byers
+['Kenneth', 'H.', 'Byers', 'Kenneth', 'H.', 'Byers,', '75,', 'of', 'Sea-', 'Tac,']
 page63.jpg
-Kenneth Hugh Byers
+['Kenneth', 'Hugh', 'Byers', 'A', 'graveside', 'service', 'for', 'Kenneth', 'H.', 'Byers']
 page64.jpg
-Lillie Bell Byers
+['Lillie', 'Bell', 'Byers', 'Lillie', 'Bell', 'Byers,', '81,', 'of', 'Fort', 'Collins,']
 page65.jpg
-R. Clive Byers
+['R.', 'Clive', 'Byers', 'R.', 'Clive', 'Byers,', '75,', 'of', 'Loveland', 'died']
 page66.jpg
-Signa Jane Byers
+['Signa', 'Jane', 'Byers', 'Signa', 'Jane', 'Byers', 'was', 'born', 'Sept.', '9,']
 page67.jpg
-BYKERK George M.
+['BYKERK', 'George', 'M.', 'Bykerk', 'of', 'Fort', 'Collins.', 'Memorial', 'service', '0']
 page68.jpg
-Death dafe: October
+['Death', 'dafe:', 'October', '3,', '2014', 'Publication', 'date:', 'October', 'il,', '2014']
 page69.jpg
-Tlene Bykerk Tlene
+['Tlene', 'Bykerk', 'Tlene', 'G.', 'Bykerk,', '70,', 'of', 'Bod-', 'fish,', 'Calif.,']
 page7.jpg
-Dr. Jack Butler
+['Dr.', 'Jack', 'Butler', 'Dr.', 'Jack', 'D.', 'Butler,', '60,', 'of', 'Bay']
 page70.jpg
-Tene Bykerk Tlene
+['Tene', 'Bykerk', 'Tlene', 'Geraldine', 'Bykerk,', '70,', 'of', 'Bodfish,', 'Calif,', 'died']
 page71.jpg
-Leland Bykerk Born
+['Leland', 'Bykerk', 'Born', 'Nov.', '15,', '1928,', 'Leland', 'Wesley', 'Bykerk', 'joined']
 page72.jpg
-Death dates TJonuary
+['Death', 'dates', 'TJonuary', 'MW,', '2019', 'Publication', 'date:', 'Jannary', 'I,', '2014']
 page73.jpg
-’ . Leonard.
+['’', '.', 'Leonard.', 'B', 'ing', 'a', 'lengthy', 'illness.', ':', '*»']
 page74.jpg
-MWANUY ADYICL LeRoy
+['MWANUY', 'ADYICL', 'LeRoy', 'Byler,', '70,', 'passed', 'away', 'on', 'Dec.', '18,']
 page75.jpg
-Martha P. Byler
+['Martha', 'P.', 'Byler', 'Martha', 'P.', 'Byler,', '88,', 'of', 'Fort', 'Collins,']
 page76.jpg
-Dennis Kenneth Bylina
+['Dennis', 'Kenneth', 'Bylina', 'Dennis', 'Kenneth', 'Bylina,', '68', 'of', 'Loveland,', 'died']
 page77.jpg
-Pauline L. Bymaster
+['Pauline', 'L.', 'Bymaster', 'Pauline’Leola', 'Bymaster,', 'TT8', 'of', 'Wellington', 'died', 'Monday.']
 page78.jpg
-Muton Bynum itt.
+['Muton', 'Bynum', 'itt.', 'r', '2%', '—', '\\', 'a', ')', '2']
 page79.jpg
-Peggy Bynum, 61,
+['Peggy', 'Bynum,', '61,', 'of', '401', 'N.', 'Summit', 'View', 'Road', 'ed']
 page8.jpg
-Death date: didy
+['Death', 'date:', 'didy', '3,', '20g', 'Pablication', 'date:', 'Only', 'lo,', '2018']
 page80.jpg
-Berens Byram, 21,
+['Berens', 'Byram,', '21,', 'of', 'Sterling', 'died', 'Sunday,', 'Feb.', '‘8,', '1989,']
 page81.jpg
-Donnie Byrd Donnie
+['Donnie', 'Byrd', 'Donnie', 'Lee', 'Byrd,', '32,', 'of', 'Fort', 'Collins,', 'died']
 page82.jpg
-“Woo jedeyo “[eounj1apuatyo
+['“Woo', 'jedeyo', '“[eounj1apuatyo', 'ye', 'Alruey', '2', '0}', 'saduajopuco', '=', 'puas']
 page83.jpg
-Catherine Anne Byrne
+['Catherine', 'Anne', 'Byrne', 'Catherine', 'Anne', 'Byrne', 'of', '|', 'Fort', 'Collins']
 page84.jpg
-22 7o% Clara
+['22', '7o%', 'Clara', 'Rosalie', 'Byron', 'BYRON', '7/2.7|8', 'Clara', 'Rosalie', 'Byron,']
 page85.jpg
-honors from the
+['honors', 'from', 'the', 'Americay', 'Legion', 'George', 'Beach', 'Post', 'No.', '4.']
 page86.jpg
-Paul A. Byron
+['Paul', 'A.', 'Byron', 'Paul', 'A.', 'Byron,', '73,', 'of', 'Fort', 'Col-']
 page87.jpg
-John Francis Byster
+['John', 'Francis', 'Byster', 'John', 'Francis', 'Byster,', '51,', 'of', 'Windsor,', 'died']
 page88.jpg
-eland in k
+['eland', 'in', 'k', 'A', 'funeral', 'will', 'be', 'held', 'at', '2']
 page9.jpg
-John Butler’ a
+['John', 'Butler’', 'a', '~', '22', 'John', 'L.', 'tate”', 'Butle?,', 'brother']
