@@ -37,13 +37,28 @@ for file in folder:
                                 text = pytesseract.image_to_string(Image.open(filename))
                                 os.remove(filename)
                                 text_split = text.split()
-                                first_words = text_split[0:10]
+                                first_ten_words = text_split[0:10]
                                 print(text_split[0:10])
+                                
                                 first_name = open("C:\\Documents\first_names.txt", "r")
                                 last_name = open("C:\\Documents\last_names.txt", "r")
-                                for item in first_words:
-                                        if item in 
                                 
+                                first_names_list = []
+                                last_names_list = []
+                                fullname = []
+                                
+                                for item in first_ten_words:
+                                        if item in first_name:
+                                                first_names_list.add(item)
+                                        elif item in last_name:
+                                                last_names_list.add(item)
+                                        else:
+                                                pass
+                                if item.startswith("B") in last_names_list:
+                                        fullname.append[item]
+                                else:
+                                        pass
+                                        
                         except:
                                 print(filename)
                                 print("Couldn't get text. Manually rename.")
