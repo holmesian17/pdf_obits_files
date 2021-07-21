@@ -37,11 +37,16 @@ for file in folder:
                                 text = pytesseract.image_to_string(Image.open(filename))
                                 os.remove(filename)
                                 text_split = text.split()
-                                print(text_split[0:5])
-                                #print(text)
+                                first_words = text_split[0:10]
+                                print(text_split[0:10])
+                                first_name = open("C:\\Documents\first_names.txt", "r")
+                                last_name = open("C:\\Documents\last_names.txt", "r")
+                                for item in first_words:
+                                        if item in 
+                                
                         except:
                                 print(filename)
-                                print("Couldn't get name")
+                                print("Couldn't get text. Manually rename.")
 
 # show the output images
 #cv2.imshow("Image", image)
