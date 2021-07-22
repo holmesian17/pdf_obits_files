@@ -22,11 +22,15 @@ elif args["preprocess"] == "blur":
 	gray = cv2.medianBlur(gray, 3)
 '''
 folder=os.getcwd()
+
+def has_numbers(item):
+        return any(char.isdigit() for char in item)
+
 for file in folder:
         for filename in os.listdir():
                 if '.jpg' in filename:
                         try:
-                                print(filename)
+                                #print(filename)
                                 image = cv2.imread(filename)
                                 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
                                 filename = "{}.png".format(os.getpid())
@@ -38,7 +42,18 @@ for file in folder:
                                 os.remove(filename)
                                 text_split = text.split()
                                 first_ten_words = text_split[0:10]
-                                print(text_split[0:10])
+                                first_ten_words = list(set(first_ten_words))
+                                print(first_ten_words)
+                                
+                                for item in first_ten_words:
+                                        if '"' in item:
+                                                print(item)
+                                                first_ten_words.remove(item)
+                                        elif has_numbers(item) == True:
+                                                print(item)
+                                                first_ten_words.remove(item)
+                                                
+                                
                                 
                                 first_name = open("C:\\Documents\first_names.txt", "r")
                                 last_name = open("C:\\Documents\last_names.txt", "r")
