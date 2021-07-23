@@ -44,29 +44,23 @@ for file in folder:
                         first_ten_words = [i.replace('”',  '~') for i in first_ten_words]
                         first_ten_words = [i.replace('“',  '~') for i in first_ten_words]
                         first_ten_words = list(set(first_ten_words))
-                        print("Duplicate words removed: ", first_ten_words)
+                        #print("Duplicate words removed: ", first_ten_words)
 
-                        first_ten_copy = first_ten_words
-                        
-                        for item in first_ten_copy:
+                        for item in first_ten_words:
                                 item=item.lower()
                                 item=item.capitalize()
-                                print("This word is: ", item)
-                                if '~' in item:
-                                        print("Has carots: ", item)
-                                        first_ten_copy.remove(item)
-                                elif item.isnumeric() == True:
-                                        print("This is a number: ", item)
-                                        first_ten_copy.remove(item)
-                                elif any(chr.isdigit() for chr in item) == True:
-                                        print("Has digits: ", item)
-                                        first_ten_copy.remove(item)
-                                else:
-                                        pass
-                        print("Final result: ", first_ten_copy)
+                                
+                        first_ten_words = [item for item in first_ten_words if '~' not in item]
+                        print("No tildes: ", first_ten_words)
+                        first_ten_words = [item for item in first_ten_words if item.isnumeric() == False]
+                        print("NaN: ", first_ten_words)
+                        first_ten_words = [item for item in first_ten_words if any(chr.isdigit() for chr in item) == False]
+                        print("Na(ny)N: ", first_ten_words)
+                        
+                        
                                 
                         
-                        '''
+                  
                         first_name = open("C:\\Documents\first_names.txt", "r")
                         last_name = open("C:\\Documents\last_names.txt", "r")
                         
