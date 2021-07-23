@@ -27,7 +27,6 @@ folder=os.getcwd()
 for file in folder:
         for filename in os.listdir():
                 if '.jpg' in filename:
-                        
                         #print(filename)
                         image = cv2.imread(filename)
                         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -41,21 +40,30 @@ for file in folder:
                         text_split = text.split()
                         first_ten_words = text_split[0:10]
                         print("Original ten: ", first_ten_words)
+                        first_ten_words = [i.replace('"',  '~') for i in first_ten_words]
+                        first_ten_words = [i.replace('”',  '~') for i in first_ten_words]
+                        first_ten_words = [i.replace('“',  '~') for i in first_ten_words]
                         first_ten_words = list(set(first_ten_words))
                         print("Duplicate words removed: ", first_ten_words)
+
+                        first_ten_copy = first_ten_words
                         
-                        for item in first_ten_words:
-                                print(item)
-                                if '"' in item:
-                                        print("Has quotes: ", item)
-                                        first_ten_words.remove(item)
+                        for item in first_ten_copy:
+                                item=item.lower()
+                                item=item.capitalize()
+                                print("This word is: ", item)
+                                if '~' in item:
+                                        print("Has carots: ", item)
+                                        first_ten_copy.remove(item)
                                 elif item.isnumeric() == True:
                                         print("This is a number: ", item)
-                                        first_ten_words.remove(item)
+                                        first_ten_copy.remove(item)
                                 elif any(chr.isdigit() for chr in item) == True:
                                         print("Has digits: ", item)
-                                        first_ten_words.remove(item)
-                        print("Final result: ", first_ten_words)
+                                        first_ten_copy.remove(item)
+                                else:
+                                        pass
+                        print("Final result: ", first_ten_copy)
                                 
                         
                         '''
