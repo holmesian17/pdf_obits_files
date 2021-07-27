@@ -3,6 +3,7 @@ import pytesseract
 import cv2
 import os
 import argparse
+import re
 '''
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
@@ -43,6 +44,7 @@ for file in folder:
                         first_ten_words = [i.replace('"',  '~') for i in first_ten_words]
                         first_ten_words = [i.replace('”',  '~') for i in first_ten_words]
                         first_ten_words = [i.replace('“',  '~') for i in first_ten_words]
+                        first_ten_words = [i.replace(',',  '') for i in first_ten_words]
                         first_ten_words = list(set(first_ten_words))
                         print("Duplicate words removed: ", first_ten_words)
 
@@ -58,12 +60,26 @@ for file in folder:
                         first_ten_words = [item for item in first_ten_words if 'and' not in item]
                         first_ten_words = [item for item in first_ten_words if 'the' not in item]
                         first_ten_words = [item for item in first_ten_words if 'Fort' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Saturday' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Sunday' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Monday' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Tuesday' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Wednesday' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Thursday' not in item]
+                        first_ten_words = [item for item in first_ten_words if 'Friday' not in item]
 
 
                         first_names_list = []
                         last_names_list = []
+                        middle_initial_list = []
                         fullname = []
 
+                        for item in first_ten_words:
+                                m = re.search('[A-Z][.]', item)
+                                if item == m:
+                                        middle_initial_list.append(item)
+                                        print("Middle", item)
+                                #regex single character not working yet 
 
                         for item in first_ten_words:
                                 with open ('first_names.txt') as search:
@@ -81,12 +97,17 @@ for file in folder:
                                 
                         print("Last name: ", last_names_list)
                         print("First name: ", first_names_list)
-                                        
-                        if item.startswith("B") in last_names_list:
-                                fullname.append[item]
-                        else:
-                                pass
-                        
+
+                        for item in last_names_list:                                        
+                                if item.startswith("B"):
+                                        fullname.append(item)
+                                else: pass
+                                
+                        for item in first_names_list:                                        
+                                fullname.append(item) 
+                        else: pass
+
+                        print("Full name: ", fullname)
                         '''
                         first_name = open("C:\\Documents\first_names.txt", "r")
                         last_name = open("C:\\Documents\last_names.txt", "r")
