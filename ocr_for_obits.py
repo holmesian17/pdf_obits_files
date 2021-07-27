@@ -28,7 +28,7 @@ folder=os.getcwd()
 for file in folder:
         for filename in os.listdir():
                 if '.jpg' in filename:
-                        #print(filename)
+                        print(filename)
                         image = cv2.imread(filename)
                         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
                         filename = "{}.png".format(os.getpid())
@@ -40,10 +40,10 @@ for file in folder:
                         os.remove(filename)
                         text_split = text.split()
                         first_ten_words = text_split[0:10]
-                        #print("Original ten: ", first_ten_words)
-                        first_ten_words = [i.replace('"',  '~') for i in first_ten_words]
-                        first_ten_words = [i.replace('”',  '~') for i in first_ten_words]
-                        first_ten_words = [i.replace('“',  '~') for i in first_ten_words]
+                        print("Original ten: ", first_ten_words)
+                        first_ten_words = [i.replace('"',  '') for i in first_ten_words]
+                        first_ten_words = [i.replace('”',  '') for i in first_ten_words]
+                        first_ten_words = [i.replace('“',  '') for i in first_ten_words]
                         first_ten_words = [i.replace(',',  '') for i in first_ten_words]
                         first_ten_words = list(set(first_ten_words))
                         print("Duplicate words removed: ", first_ten_words)
@@ -67,7 +67,7 @@ for file in folder:
                         first_ten_words = [item for item in first_ten_words if 'Wednesday' not in item]
                         first_ten_words = [item for item in first_ten_words if 'Thursday' not in item]
                         first_ten_words = [item for item in first_ten_words if 'Friday' not in item]
-
+                        first_ten_words = [item for item in first_ten_words if 'Collins' not in item]
 
                         first_names_list = []
                         last_names_list = []
@@ -82,16 +82,16 @@ for file in folder:
                                 #regex single character not working yet 
 
                         for item in first_ten_words:
-                                with open ('first_names.txt') as search:
-                                        for line in search:
+                                with open ('first_names.txt') as first_search:
+                                        for line in first_search:
                                                 line = line.rstrip()
                                                 if item == line:
                                                         first_names_list.append(item)
-                        for item in first_ten_words:
-                                with open ('last_names.txt') as search:
-                                        for line in search:
+
+                                with open ('last_names.txt') as last_search:
+                                        for line in last_search:
                                                 line = line.rstrip()
-                                                if item == line:
+                                                if item == line and item.startswith("B")==True:
                                                         last_names_list.append(item)
                                                 
                                 
@@ -99,35 +99,19 @@ for file in folder:
                         print("First name: ", first_names_list)
 
                         for item in last_names_list:                                        
-                                if item.startswith("B"):
+                                if item.startswith("B")==True:
                                         fullname.append(item)
                                 else: pass
                                 
                         for item in first_names_list:                                        
                                 fullname.append(item) 
                         else: pass
+                        
+                        fullname = list(set(fullname))
 
                         print("Full name: ", fullname)
                         '''
-                        first_name = open("C:\\Documents\first_names.txt", "r")
-                        last_name = open("C:\\Documents\last_names.txt", "r")
-                        
-                        first_names_list = []
-                        last_names_list = []
-                        fullname = []
-                        
-                        for item in first_ten_words:
-                                if item in first_name:
-                                        first_names_list.add(item)
-                                elif item in last_name:
-                                        last_names_list.add(item)
-                                else:
-                                        pass
-                        if item.startswith("B") in last_names_list:
-                                fullname.append[item]
-                        else:
-                                pass
-                                     
+                         
                         except:
                                 print(filename)
                                 print("Couldn't get text. Manually rename.")
