@@ -4,6 +4,18 @@ import cv2
 import os
 import argparse
 import re
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.tag import pos_tag
+from nltk.chunk import conlltags2tree, tree2conlltags
+from pprint import pprint
+
+
+import spacy
+from spacy import displacy
+from collections import Counter
+import en_core_web_trf
+
 '''
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
@@ -38,6 +50,26 @@ for file in folder:
 
                         text = pytesseract.image_to_string(Image.open(filename))
                         os.remove(filename)
+                        text= text.strip('\n')                        
+                        
+                        nlp = en_core_web_trf.load()
+
+                        doc=nlp(text)
+
+                        people = []
+                        
+                        for X in doc.ents:
+                                for word in X.text:
+                                        if word.upper() == True:
+                                                pass
+                                if X.label_ == "PERSON":
+                                      print(X.text, X.label_)
+                                      break  
+                        
+                        #pprint([(X.text, X.label_) for X in doc.ents])
+
+                        '''
+
                         text_split = text.split()
                         first_ten_words = text_split[0:10]
                         print("Original ten: ", first_ten_words)
@@ -110,7 +142,7 @@ for file in folder:
                         fullname = list(set(fullname))
 
                         print("Full name: ", fullname)
-                        '''
+                        
                          
                         except:
                                 print(filename)
