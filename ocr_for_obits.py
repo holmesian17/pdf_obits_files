@@ -41,6 +41,7 @@ for file in folder:
         for filename in os.listdir():
                 if '.jpg' in filename:
                         print(filename)
+                        jpg_name = filename
                         image = cv2.imread(filename)
                         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
                         filename = "{}.png".format(os.getpid())
@@ -56,15 +57,15 @@ for file in folder:
 
                         doc=nlp(text)
 
-                        people = []
+                        people = {}
                         
                         for X in doc.ents:
-                                for word in X.text:
-                                        if word.upper() == True:
-                                                pass
+ 
                                 if X.label_ == "PERSON":
-                                      print(X.text, X.label_)
-                                      break  
+                                        people = {jpg_name: X.text}
+                                        print(people)
+                                        break
+                                
                         
                         #pprint([(X.text, X.label_) for X in doc.ents])
 
