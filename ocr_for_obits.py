@@ -35,12 +35,12 @@ elif args["preprocess"] == "blur":
 	gray = cv2.medianBlur(gray, 3)
 '''
 folder=os.getcwd()
-
+people = {}
 
 for file in folder:
         for filename in os.listdir():
                 if '.jpg' in filename:
-                        print(filename)
+                        #print(filename)
                         jpg_name = filename
                         image = cv2.imread(filename)
                         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -57,19 +57,21 @@ for file in folder:
 
                         doc=nlp(text)
 
-                        people = {}
+                        
                         
                         for X in doc.ents:
  
                                 if X.label_ == "PERSON":
-                                        people = {jpg_name: X.text}
-                                        print(people)
+                                        print(jpg_name, X.text)
+                                        people[jpg_name] = X.text
+                                        
                                         break
-                                
                         
+                                
+                        # isupper to determine if its in caps
                         #pprint([(X.text, X.label_) for X in doc.ents])
-
-                        '''
+print(people)
+'''
 
                         text_split = text.split()
                         first_ten_words = text_split[0:10]
