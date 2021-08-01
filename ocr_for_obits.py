@@ -37,40 +37,53 @@ elif args["preprocess"] == "blur":
 folder=os.getcwd()
 people = {}
 
-for file in folder:
-        for filename in os.listdir():
-                if '.jpg' in filename:
-                        #print(filename)
-                        jpg_name = filename
-                        image = cv2.imread(filename)
-                        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-                        filename = "{}.png".format(os.getpid())
-                        cv2.imwrite(filename, gray)
+def get_name():
+        for file in folder:
+                for filename in os.listdir():
+                        if '.jpg' in filename:
+                                #print(filename)
+                                jpg_name = filename
+                                image = cv2.imread(filename)
+                                gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+                                filename = "{}.png".format(os.getpid())
+                                cv2.imwrite(filename, gray)
 
-                        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+                                pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-                        text = pytesseract.image_to_string(Image.open(filename))
-                        os.remove(filename)
-                        text= text.strip('\n')                        
-                        
-                        nlp = en_core_web_trf.load()
-
-                        doc=nlp(text)
-
-                        
-                        
-                        for X in doc.ents:
- 
-                                if X.label_ == "PERSON":
-                                        print(jpg_name, X.text)
-                                        people[jpg_name] = X.text
-                                        
-                                        break
-                        
+                                text = pytesseract.image_to_string(Image.open(filename))
+                                os.remove(filename)
+                                text= text.replace('\n', ' ')                        
                                 
-                        # isupper to determine if its in caps
-                        #pprint([(X.text, X.label_) for X in doc.ents])
-print(people)
+                                nlp = en_core_web_trf.load()
+
+                                doc=nlp(text)
+
+                                
+                                
+                                for X in doc.ents:
+         
+                                        if X.label_ == "PERSON":
+                                                print(jpg_name, X.text)
+                                                people[jpg_name] = X.text
+                                                
+                                                break
+                                
+                                        
+                                # isupper to determine if its in caps
+                                #pprint([(X.text, X.label_) for X in doc.ents])
+def check_dict():
+        for k, v in people.items():
+                i = 1
+                if v.isupper == True:
+                        people[k] = "Manual rename" + i
+
+                        i = i + 1
+def check_results():
+        print(people)
+
+get_name()
+check_dict()
+check_results()
 '''
 
                         text_split = text.split()
