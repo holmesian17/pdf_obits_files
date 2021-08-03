@@ -10,7 +10,7 @@ from nltk.tag import pos_tag
 from nltk.chunk import conlltags2tree, tree2conlltags
 from pprint import pprint
 
-
+import glob
 import spacy
 from spacy import displacy
 from collections import Counter
@@ -38,39 +38,45 @@ folder=os.getcwd()
 people = {}
 
 def get_name():
-        for file in folder:
+        number_of_files = len(glob.glob1('.',"*.jpg"))
+        i = 0
+
+        for file in os.walk('.'):
                 for filename in os.listdir():
                         if '.jpg' in filename:
-                                #print(filename)
-                                jpg_name = filename
-                                image = cv2.imread(filename)
-                                gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-                                filename = "{}.png".format(os.getpid())
-                                cv2.imwrite(filename, gray)
+                                if i <= number_of_files:
+                                        #print(filename)
+                                        jpg_name = filename
+                                        image = cv2.imread(filename)
+                                        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+                                        filename = "{}.png".format(os.getpid())
+                                        cv2.imwrite(filename, gray)
 
-                                pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+                                        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-                                text = pytesseract.image_to_string(Image.open(filename))
-                                os.remove(filename)
-                                text= text.replace('\n', ' ')                        
-                                
-                                nlp = en_core_web_trf.load()
-
-                                doc=nlp(text)
-
-                                
-                                
-                                for X in doc.ents:
-         
-                                        if X.label_ == "PERSON":
-                                                print(jpg_name, X.text)
-                                                people[jpg_name] = X.text
-                                                
-                                                break
-                                
+                                        text = pytesseract.image_to_string(Image.open(filename))
+                                        os.remove(filename)
+                                        text= text.replace('\n', ' ')                        
                                         
-                                # isupper to determine if its in caps
-                                #pprint([(X.text, X.label_) for X in doc.ents])
+                                        nlp = en_core_web_trf.load()
+
+                                        doc=nlp(text)
+
+                                        
+                                        
+                                        for X in doc.ents:
+                 
+                                                if X.label_ == "PERSON":
+                                                        print(jpg_name, X.text)
+                                                        people[jpg_name] = X.text
+                                                        
+                                                        break
+                                        i += 1
+                                        print(i)
+                                        
+                                        
+
+        
 def check_dict():
         for k, v in people.items():
                 i = 1
@@ -78,6 +84,12 @@ def check_dict():
                         people[k] = "Manual rename" + i
 
                         i = i + 1
+                elif len(v) <= 1:
+                        people[k] = "Manual rename" + i
+
+                        i = i + 1                        
+
+                
 def check_results():
         print(people)
 
