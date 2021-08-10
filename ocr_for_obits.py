@@ -16,24 +16,6 @@ from spacy import displacy
 from collections import Counter
 import en_core_web_trf
 
-'''
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True,
-	help="path to input image to be OCR'd")
-ap.add_argument("-p", "--preprocess", type=str, default="thresh",
-	help="type of preprocessing to be done")
-args = vars(ap.parse_args())
-
-image = cv2.imread(args["image"])
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-if args["preprocess"] == "thresh":
-	gray = cv2.threshold(gray, 0, 255,
-		cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
-
-elif args["preprocess"] == "blur":
-	gray = cv2.medianBlur(gray, 3)
-'''
 folder=os.getcwd()
 people = {}
 
@@ -87,7 +69,8 @@ def check_dict():
                 elif len(v) <= 1:
                         people[k] = "Manual rename" + i
 
-                        i = i + 1                        
+                        i = i + 1
+                v = v[-1:] + v[:-1]
 
                 
 def check_results():
