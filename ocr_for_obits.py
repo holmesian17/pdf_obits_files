@@ -70,7 +70,12 @@ def check_dict():
                         people[k] = "Manual rename" + i
 
                         i = i + 1
-                v = v[-1:] + v[:-1]
+                vlist = v.split()
+                v = vlist[-1:] + vlist[:-1]
+                str1 = " "
+                v = str1.join(v)
+                people[k] = v
+
 
                 
 def check_results():
