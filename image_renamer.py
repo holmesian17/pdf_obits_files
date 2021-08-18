@@ -135,6 +135,8 @@ class sorting_gui(tk.Frame):
         #print(flist)
  
     def show_content(self, event):
+        global file
+        
         widget = event.widget
         selection = widget.curselection()
         file = widget.get(selection[0])
@@ -166,7 +168,7 @@ class sorting_gui(tk.Frame):
 
     def rename(self):
         global main_folder
-        global current_folder
+        global file
 
         name_window = tk.Toplevel(app)
 
@@ -174,48 +176,35 @@ class sorting_gui(tk.Frame):
         name_window.geometry("400x100")
 
         name_name = tk.StringVar(self)
-
+                
+        print(file)
+        basename = os.path.basename(file)
+        print(basename)
+        def set_input(basename):
+            name_entry.delete(1.0, "END")
+            name_entry.insert("END", basename)
         def name_submit():
+            global file
             name = name_name.get()
+            this_folder = os.getcwd()
             #print(name)
+            old_file = file
+            new_file = os.path.join(this_folder, str(name))
+            os.rename(old_file, new_file)
+            print(file)
 
-            folder = self.main_folder
-            #(folder + " folder")
-            new_folder = os.path.join(folder, str(name))
-            current_folder = new_folder
-            #print(new_folder)
-            if not os.path.exists(new_folder):
-                flist = os.listdir(folder)
+            self.file_box.delete(self.file_box.curselection())
+            self.file_box.insert("end", name)
+            self.file_box.selection_clear(0, "end")
+            self.file_box.selection_set("end")
+            
+            self.file_box.see("end")
+            self.file_box.activate("end")
 
-                os.makedirs(new_folder)
+            self.file_box.event_generate("<<ListboxSelect>>")
+            
 
-                os.chdir(new_folder)
-                # THE ITEMS INSERTED WITH A LOOP
-                self.folder_box.insert("end", name)
-                self.folder_box.selection_clear(0, "end")
-                self.folder_box.selection_set("end")
-
-                self.folder_box.see("end")
-                self.folder_box.activate("end")
-
-                self.folder_box.event_generate("<<ListboxSelect>>")
-
-
-                #print(flist)
-
-                #os.chdir(new_folder)
-                # needs to then refresh the listbox
-                # and change the selection to the new folder
-                # will this require calling the get_current_folder function?
-                #print("created")
-
-
-            else:
-                os.chdir(new_folder)
-                #print("changed")
-                #print(os.getcwd())
-
-            folder_window.destroy()
+            name_window.destroy()
 
         name_label = tk.Label(name_window, text='Image name', font=('calibre', 14, 'bold'))
 
